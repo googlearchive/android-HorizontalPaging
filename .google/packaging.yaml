@@ -11,7 +11,7 @@ solutions:    [Mobile]
 github:       android-HorizontalPaging
 level:        INTERMEDIATE
 icon:         screenshots/icon-web.png
-api_refs:
+apiRefs:
     - android:android.support.v4.view.ViewPager
     - android:android.support.v4.app.FragmentPagerAdapter
 license: apache2
