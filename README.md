@@ -7,24 +7,24 @@ Introduction
 ------------
 
 This sample implements tabs using the deprecated [ActionBar.TabListener][1]. It uses [ViewPager][2] and
-        [FragmentPagerAdapter][3] to handle swiping between tabs and displaying the selected tab content.
+[FragmentPagerAdapter][3] to handle swiping between tabs and displaying the selected tab content.
 
 
-        1. Create an Activity that extends [FragmentActivity][4], with a [ViewPager][2] for its layout.
-        2. Implement [ActionBar.TabListener][1] interface.
-        3. Create a class that extends [FragmentPagerAdapter][3] and override its `getItem(int position)`,
-        `getCount()` and `getPageTitle(int position)` methods.
-        4. In the `onCreate(Bundle savedInstanceState)` method of your activity, set navigation mode to tabs for the
-        ActionBar using `setNavigationMode(ActionBar.NAVIGATION_MODE_TABS)`. Note: This is DEPRECATED as of Android
-        Lollipop.
-        5. Set your custom [FragmentPagerAdapter][3] on your [ViewPager][2].
-        6. Implement `setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener())` on your [ViewPager][2] to
-        know the selected tab, so you can update your ActionBar with `setSelectedNavigationItem(position)`.
+1. Create an Activity that extends [FragmentActivity][4], with a [ViewPager][2] for its layout.
+2. Implement [ActionBar.TabListener][1] interface.
+3. Create a class that extends [FragmentPagerAdapter][3] and override its `getItem(int position)`,
+`getCount()` and `getPageTitle(int position)` methods.
+4. In the `onCreate(Bundle savedInstanceState)` method of your activity, set navigation mode to tabs for the
+ActionBar using `setNavigationMode(ActionBar.NAVIGATION_MODE_TABS)`. Note: This is DEPRECATED as of Android
+Lollipop.
+5. Set your custom [FragmentPagerAdapter][3] on your [ViewPager][2].
+6. Implement `setOnPageChangeListener(new ViewPager.SimpleOnPageChangeListener())` on your [ViewPager][2] to
+know the selected tab, so you can update your ActionBar with `setSelectedNavigationItem(position)`.
 
-        [1]: http://developer.android.com/reference/android/support/v7/app/ActionBar.TabListener.html
-        [2]: http://developer.android.com/reference/android/support/v4/view/ViewPager.html
-        [3]: http://developer.android.com/reference/android/support/v4/app/FragmentPagerAdapter.html
-        [4]: http://developer.android.com/reference/android/support/v4/app/FragmentActivity.html
+[1]: http://developer.android.com/reference/android/support/v7/app/ActionBar.TabListener.html
+[2]: http://developer.android.com/reference/android/support/v4/view/ViewPager.html
+[3]: http://developer.android.com/reference/android/support/v4/app/FragmentPagerAdapter.html
+[4]: http://developer.android.com/reference/android/support/v4/app/FragmentActivity.html
 
 Pre-requisites
 --------------
@@ -36,7 +36,7 @@ Pre-requisites
 Screenshots
 -------------
 
-<img src=screenshots/1-tab1.png height="400" alt="Screenshot"/> <img src=screenshots/2-tab2.png height="400" alt="Screenshot"/> 
+<img src="screenshots/1-tab1.png" height="400" alt="Screenshot"/> <img src="screenshots/2-tab2.png" height="400" alt="Screenshot"/> 
 
 Getting Started
 ---------------
